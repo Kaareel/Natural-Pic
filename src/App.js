@@ -1,6 +1,6 @@
 import "./styles.css";
 
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Context from "./components/Context";
 import Home from "./views/Home";
@@ -25,14 +25,14 @@ export default function App() {
   return (
     <div className="App">
       <Context.Provider value={{fotos, setFotos, favoritos, setFavoritos}}>
-        <HashRouter>
+        <BrowserRouter>
           <Navbar />
 
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/favoritos" element={<Favoritos />} />
           </Routes>
-        </HashRouter>
+        </BrowserRouter>
       </Context.Provider>
 
     </div>
