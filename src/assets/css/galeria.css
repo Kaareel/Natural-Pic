@@ -6,7 +6,7 @@
 
 .grid-columns-5 {
   grid-template-columns: repeat(5, 1fr);
-  background-color: black;
+  width: 100%;
 }
 .grid-columns-4 {
   grid-template-columns: repeat(4, 1fr);
